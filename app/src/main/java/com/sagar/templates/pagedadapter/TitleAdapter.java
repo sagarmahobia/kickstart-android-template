@@ -1,6 +1,7 @@
 package com.sagar.templates.pagedadapter;
 
 import android.view.LayoutInflater;
+import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
@@ -57,11 +58,18 @@ public class TitleAdapter extends PagedListAdapter<TitleModel, TitleViewHolder> 
 
     @Override
     public void onBindViewHolder(@NonNull TitleViewHolder holder, int position) {
-        TitleModel titleModel = titleModels.get(position);
+        final TitleModel model = titleModels.get(position);
 
-        holder.getBinding().setModel(titleModel);
-        holder.bindTo(titleModel);
-
+        holder.getBinding().setModel(model);
+        holder.bindTo(model);
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (clickListener != null) {
+                    clickListener.onClick(model);
+                }
+            }
+        });
     }
 
     @Override

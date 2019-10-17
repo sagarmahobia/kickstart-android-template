@@ -7,11 +7,11 @@
 
         <variable
             name="model"
-            type="com.sagar.templates.screens.NameActivityModel" />
+            type="com.sagar.templates.activity.NameActivityModel" />
 
         <variable
             name="handler"
-            type="com.sagar.templates.screens.NameActivityHandler" />
+            type="com.sagar.templates.activity.NameActivityHandler" />
 
     </data>
 

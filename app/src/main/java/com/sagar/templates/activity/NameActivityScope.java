@@ -1,4 +1,4 @@
-package com.sagar.templates.screens;
+package com.sagar.templates.activity;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

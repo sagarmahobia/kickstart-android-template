@@ -1,4 +1,4 @@
-package com.sagar.templates.screens;
+package com.sagar.templates.activity;
 
 import androidx.annotation.NonNull;
 import androidx.lifecycle.ViewModel;
@@ -26,6 +26,6 @@ public class NameActivityViewModelFactory implements ViewModelProvider.Factory {
     }
 }
 //@ContributesAndroidInjector(modules = {NameActivityModule.class})
-//NameActivityScope
+//@NameActivityScope
 //abstract NameActivity bindNameActivity();
 
