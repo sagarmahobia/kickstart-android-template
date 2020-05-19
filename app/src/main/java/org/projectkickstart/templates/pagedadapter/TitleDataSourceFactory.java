@@ -28,6 +28,7 @@ public class TitleDataSourceFactory extends DataSource.Factory<Integer, TitleMod
     public DataSource<Integer, TitleModel> create() {
         dataSource = new TitleDataSource(disposable, stateLiveData);
         return dataSource;
+
     }
 
     void invalidate() {
