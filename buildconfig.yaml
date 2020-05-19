@@ -1,0 +1,17 @@
+templates:
+  - type: activity
+    path: activity
+    name: Name
+    layout: activity_name.xml
+  - type: adapter
+    path: adapter
+    name: Name
+    layout: name_list_item.xml
+  - type: fragment
+    path: fragment
+    name: Profile
+    layout: fragment_profile.xml
+  - type: adapter
+    path: pagedadapter
+    name: Title
+    layout: title_list_item.xml

@@ -7,11 +7,11 @@
 
         <variable
             name="model"
-            type="com.sagar.templates.pagedadapter.TitleModel" />
+            type="org.projectkickstart.templates.pagedadapter.TitleModel" />
 
         <variable
             name="handler"
-            type="com.sagar.templates.pagedadapter.TitleHandler" />
+            type="org.projectkickstart.templates.pagedadapter.TitleHandler" />
 
     </data>
 

@@ -7,11 +7,11 @@
 
         <variable
             name="model"
-            type="com.sagar.templates.activity.NameActivityModel" />
+            type="org.projectkickstart.templates.activity.NameActivityModel" />
 
         <variable
             name="handler"
-            type="com.sagar.templates.activity.NameActivityHandler" />
+            type="org.projectkickstart.templates.activity.NameActivityHandler" />
 
     </data>
 

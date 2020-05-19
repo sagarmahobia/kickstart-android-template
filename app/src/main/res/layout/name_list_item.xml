@@ -7,11 +7,11 @@
 
         <variable
             name="model"
-            type="com.sagar.templates.adapter.NameModel" />
+            type="org.projectkickstart.templates.adapter.NameModel" />
 
         <variable
             name="handler"
-            type="com.sagar.templates.adapter.NameHandler" />
+            type="org.projectkickstart.templates.adapter.NameHandler" />
 
     </data>
 

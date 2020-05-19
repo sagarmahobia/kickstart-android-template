@@ -4,11 +4,11 @@
 
         <variable
             name="model"
-            type="com.sagar.templates.fragment.ProfileFragmentModel" />
+            type="org.projectkickstart.templates.fragment.ProfileFragmentModel" />
 
         <variable
             name="handler"
-            type="com.sagar.templates.fragment.ProfileFragmentHandler" />
+            type="org.projectkickstart.templates.fragment.ProfileFragmentHandler" />
 
     </data>
 
