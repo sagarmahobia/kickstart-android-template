@@ -5,4 +5,4 @@ install:
   - pip install pyyaml
 # command to run tests
 script:
-  - python my_app.py
+  - python buildscript.py
