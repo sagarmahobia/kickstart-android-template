@@ -7,7 +7,7 @@ install:
 # command to run tests
 script:
   - python buildscript.py
-  - zip -r release.zip . -i /templates
+  - zip -r  release.zip . -i /templates
   - ls
 deploy:
   if: branch = master
