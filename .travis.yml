@@ -7,8 +7,8 @@ install:
 # command to run tests
 script:
   - python buildscript.py
-  - zip -r  release.zip . -i /templates
-  - ls
+  - zip -r release.zip templates
+  - ls -all
 deploy:
   provider: releases
   api_key: $GIT_UPLOAD_TOKEN
