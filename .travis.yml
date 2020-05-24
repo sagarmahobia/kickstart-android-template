@@ -10,7 +10,6 @@ script:
   - zip -r  release.zip . -i /templates
   - ls
 deploy:
-  if: branch = master
   provider: releases
   api_key: $GIT_UPLOAD_TOKEN
   file: release.zip
