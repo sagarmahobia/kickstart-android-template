@@ -3,7 +3,17 @@ python:
   - "3.7.3"
 install:
   - pip install pyyaml
+  - sudo apt install zip
 # command to run tests
 script:
-  - ls
   - python buildscript.py
+  - zip -r release.zip . -i /templates
+  - ls
+deploy:
+  if: branch = master
+  provider: releases
+  api_key: $GIT_UPLOAD_TOKEN
+  file: "release.zip"
+  skip_cleanup: true
+  on:
+    tags: true
