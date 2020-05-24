@@ -2,16 +2,43 @@ templates:
   - type: activity
     path: activity
     name: Name
-    layout: activity_name.xml
+    layout: activity_${camelCaseToUnderscore(name)}.xml
+    layoutfrom: activity_name.xml
+    templatename: MVVMActivity
+    templatedescription: Create an MVVM activity
+    parametername: Activity Name
+    parameterhelp: Name for the Activity
   - type: adapter
     path: adapter
     name: Name
-    layout: name_list_item.xml
+    layout: ${camelCaseToUnderscore(name)}_list_item.xml
+    layoutfrom: name_list_item.xml
+    templatename: MVVMAdapter
+    templatedescription: Create an MVVM adapter
+    parametername: Adapter Name
+    parameterhelp: Name for the Adapter
   - type: fragment
     path: fragment
-    name: Profile
-    layout: fragment_profile.xml
+    name: Info
+    layout: fragment_${camelCaseToUnderscore(name)}.xml
+    layoutfrom: fragment_info.xml
+    templatename: MVVMFragment
+    templatedescription: Create an MVVM fragment
+    parametername: Fragment Name
+    parameterhelp: Name for the Fragment
   - type: adapter
     path: pagedadapter
-    name: Title
-    layout: title_list_item.xml
+    name: Employee
+    layout: ${camelCaseToUnderscore(name)}_list_item.xml
+    layoutfrom: employee_list_item.xml
+    templatename: PagingAdapter
+    templatedescription: Crate a Paging Adapter
+    parametername: Adapter Name
+    parameterhelp: Name for the Adapter
+#  - type: app
+#    path: kickstart
+#    name: Kickstart
+#    templatename: App Kickstarter File
+#    templatedescription: Create file kickstart application
+#    parametername: Aplication Name
+#    parameterhelp: Name of the app

@@ -4,11 +4,11 @@
 
         <variable
             name="model"
-            type="org.projectkickstart.templates.fragment.ProfileFragmentModel" />
+            type="org.projectkickstart.templates.fragment.InfoFragmentModel" />
 
         <variable
             name="handler"
-            type="org.projectkickstart.templates.fragment.ProfileFragmentHandler" />
+            type="org.projectkickstart.templates.fragment.InfoFragmentHandler" />
 
     </data>
 
