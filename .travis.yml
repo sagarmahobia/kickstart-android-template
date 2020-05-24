@@ -13,7 +13,7 @@ deploy:
   if: branch = master
   provider: releases
   api_key: $GIT_UPLOAD_TOKEN
-  file: "release.zip"
+  file: release.zip
   skip_cleanup: true
   on:
     tags: true
