@@ -6,8 +6,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 import androidx.lifecycle.ViewModelProviders;
 
-import com.sagar.templates.R;
-import com.sagar.templates.databinding.ActivityNameBinding;
+
+import org.projectkickstart.templates.R;
+import org.projectkickstart.templates.databinding.ActivityNameBinding;
 
 import javax.inject.Inject;
 

@@ -4,20 +4,19 @@ import androidx.annotation.NonNull;
 import androidx.lifecycle.MutableLiveData;
 import androidx.paging.DataSource;
 
-
-import org.projectkickstart.templates.responsemodel.PagingState;
+import org.projectkickstart.templates.pagedadapter.PagingState;
 
 import io.reactivex.disposables.CompositeDisposable;
 
-public class TitleDataSourceFactory extends DataSource.Factory<Integer, TitleModel> {
+public class EmployeeDataSourceFactory extends DataSource.Factory<Integer, EmployeeModel> {
 
     private CompositeDisposable disposable;
     private MutableLiveData<PagingState> stateLiveData;
 
-    private TitleDataSource dataSource;
+    private EmployeeDataSource dataSource;
 
-    TitleDataSourceFactory(CompositeDisposable disposable,
-                           MutableLiveData<PagingState> stateLiveData
+    public EmployeeDataSourceFactory(CompositeDisposable disposable,
+                                     MutableLiveData<PagingState> stateLiveData
     ) {
         this.disposable = disposable;
         this.stateLiveData = stateLiveData;
@@ -25,13 +24,12 @@ public class TitleDataSourceFactory extends DataSource.Factory<Integer, TitleMod
 
     @NonNull
     @Override
-    public DataSource<Integer, TitleModel> create() {
-        dataSource = new TitleDataSource(disposable, stateLiveData);
+    public DataSource<Integer, EmployeeModel> create() {
+        dataSource = new EmployeeDataSource(disposable, stateLiveData);
         return dataSource;
-
     }
 
-    void invalidate() {
+    public void invalidate() {
         dataSource.invalidate();
     }
 }

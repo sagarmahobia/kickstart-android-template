@@ -1,9 +1,8 @@
 package org.projectkickstart.templates.pagedadapter;
 
 import androidx.databinding.BaseObservable;
-import androidx.databinding.Bindable;
 
-public class TitleModel extends BaseObservable {
+public class EmployeeModel extends BaseObservable {
 
     private Integer id;
 

@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
 
     <data>
 
         <variable
             name="model"
-            type="org.projectkickstart.templates.pagedadapter.TitleModel" />
+            type="org.projectkickstart.templates.pagedadapter.EmployeeModel" />
 
         <variable
             name="handler"
-            type="org.projectkickstart.templates.pagedadapter.TitleHandler" />
+            type="org.projectkickstart.templates.pagedadapter.EmployeeHandler" />
 
     </data>
 

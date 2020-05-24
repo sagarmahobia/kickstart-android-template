@@ -3,6 +3,6 @@ package org.projectkickstart.templates.fragment;
 import androidx.databinding.BaseObservable;
 
 
-public class ProfileFragmentModel extends BaseObservable {
+public class InfoFragmentModel extends BaseObservable {
 
 }

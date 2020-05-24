@@ -2,7 +2,7 @@ package org.projectkickstart.templates.adapter;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.sagar.templates.databinding.NameListItemBinding;
+import org.projectkickstart.templates.databinding.NameListItemBinding;
 
 public class NameViewHolder extends RecyclerView.ViewHolder {
 

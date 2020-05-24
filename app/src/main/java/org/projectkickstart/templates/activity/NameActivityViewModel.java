@@ -6,14 +6,13 @@ import io.reactivex.disposables.CompositeDisposable;
 
 public class NameActivityViewModel extends ViewModel {
 
-
     private final CompositeDisposable disposable = new CompositeDisposable();
 
     private NameActivityModel activityModel = new NameActivityModel();
+    ;
 
     public NameActivityViewModel() {
     }
-
 
     public NameActivityModel getActivityModel() {
         return activityModel;

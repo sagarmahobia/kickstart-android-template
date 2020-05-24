@@ -6,7 +6,7 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.sagar.templates.databinding.NameListItemBinding;
+import org.projectkickstart.templates.databinding.NameListItemBinding;
 
 import java.util.List;
 

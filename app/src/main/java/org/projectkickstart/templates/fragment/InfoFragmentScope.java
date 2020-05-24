@@ -8,5 +8,5 @@ import javax.inject.Scope;
 
 @Scope
 @Retention(RetentionPolicy.CLASS)
-public @interface ProfileFragmentScope {
+public @interface InfoFragmentScope {
 }

@@ -4,16 +4,16 @@ import androidx.lifecycle.ViewModel;
 
 import io.reactivex.disposables.CompositeDisposable;
 
-public class ProfileFragmentViewModel extends ViewModel {
+public class InfoFragmentViewModel extends ViewModel {
 
 
     private CompositeDisposable disposable = new CompositeDisposable();
-    private ProfileFragmentModel fragmentModel = new ProfileFragmentModel();
+    private InfoFragmentModel fragmentModel = new InfoFragmentModel();
 
-    ProfileFragmentViewModel() {
+    InfoFragmentViewModel() {
     }
 
-    ProfileFragmentModel getFragmentModel() {
+    InfoFragmentModel getFragmentModel() {
         return fragmentModel;
     }
 

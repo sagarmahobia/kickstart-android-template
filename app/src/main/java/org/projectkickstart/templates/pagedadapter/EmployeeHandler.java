@@ -1,5 +1,5 @@
 package org.projectkickstart.templates.pagedadapter;
 
-public interface TitleHandler {
+public interface EmployeeHandler {
 
 }

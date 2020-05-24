@@ -12,23 +12,23 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.lifecycle.ViewModelProviders;
 
-import com.sagar.templates.R;
-import com.sagar.templates.databinding.FragmentProfileBinding;
+import org.projectkickstart.templates.R;
+import org.projectkickstart.templates.databinding.FragmentInfoBinding;
 
 import javax.inject.Inject;
 
 import dagger.android.support.AndroidSupportInjection;
 
-public class ProfileFragment extends Fragment implements ProfileFragmentHandler {
+public class InfoFragment extends Fragment implements InfoFragmentHandler {
 
     @Inject
-    ProfileFragmentViewModelFactory viewModelFactory;
+    InfoFragmentViewModelFactory viewModelFactory;
 
-    private ProfileFragmentViewModel viewModel;
+    private InfoFragmentViewModel viewModel;
 
-    private FragmentProfileBinding binding;
+    private FragmentInfoBinding binding;
 
-    private ProfileFragmentModel fragmentModel;
+    private InfoFragmentModel fragmentModel;
 
     private FragmentActivity activity;
 
@@ -42,7 +42,7 @@ public class ProfileFragment extends Fragment implements ProfileFragmentHandler 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        viewModel = ViewModelProviders.of(this, viewModelFactory).get(ProfileFragmentViewModel.class);
+        viewModel = ViewModelProviders.of(this, viewModelFactory).get(InfoFragmentViewModel.class);
         fragmentModel = viewModel.getFragmentModel();
     }
 
@@ -51,7 +51,7 @@ public class ProfileFragment extends Fragment implements ProfileFragmentHandler 
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
 
-        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_profile, container, false);
+        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_info, container, false);
         binding.setModel(fragmentModel);
         binding.setHandler(this);
         return binding.getRoot();
