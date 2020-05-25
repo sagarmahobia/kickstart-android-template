@@ -5,11 +5,11 @@
 
         <variable
             name="model"
-            type="org.projectkickstart.templates.pagedadapter.EmployeeModel" />
+            type="org.projectkickstart.templates.mvvmpagedadapter.EmployeeModel" />
 
         <variable
             name="handler"
-            type="org.projectkickstart.templates.pagedadapter.EmployeeHandler" />
+            type="org.projectkickstart.templates.mvvmpagedadapter.EmployeeHandler" />
 
     </data>
 

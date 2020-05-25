@@ -1,4 +1,4 @@
-package org.projectkickstart.templates.pagedadapter;
+package org.projectkickstart.templates.mvvmpagedadapter;
 
 import androidx.annotation.NonNull;
 import androidx.lifecycle.MutableLiveData;

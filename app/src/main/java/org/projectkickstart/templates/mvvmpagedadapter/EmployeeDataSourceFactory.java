@@ -1,10 +1,10 @@
-package org.projectkickstart.templates.pagedadapter;
+package org.projectkickstart.templates.mvvmpagedadapter;
 
 import androidx.annotation.NonNull;
 import androidx.lifecycle.MutableLiveData;
 import androidx.paging.DataSource;
 
-import org.projectkickstart.templates.pagedadapter.PagingState;
+import org.projectkickstart.templates.mvvmpagedadapter.PagingState;
 
 import io.reactivex.disposables.CompositeDisposable;
 

@@ -1,4 +1,4 @@
-package org.projectkickstart.templates.activity;
+package org.projectkickstart.templates.mvvmactivity;
 
 import androidx.lifecycle.ViewModel;
 

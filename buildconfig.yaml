@@ -1,6 +1,6 @@
 templates:
   - type: activity
-    path: activity
+    path: mvvmactivity
     name: Name
     layout: activity_${camelCaseToUnderscore(name)}.xml
     layoutfrom: activity_name.xml
@@ -9,7 +9,7 @@ templates:
     parametername: Activity Name
     parameterhelp: Name for the Activity
   - type: adapter
-    path: adapter
+    path: mvvmadapter
     name: Name
     layout: ${camelCaseToUnderscore(name)}_list_item.xml
     layoutfrom: name_list_item.xml
@@ -18,7 +18,7 @@ templates:
     parametername: Adapter Name
     parameterhelp: Name for the Adapter
   - type: fragment
-    path: fragment
+    path: mvvmfragment
     name: Info
     layout: fragment_${camelCaseToUnderscore(name)}.xml
     layoutfrom: fragment_info.xml
@@ -27,11 +27,11 @@ templates:
     parametername: Fragment Name
     parameterhelp: Name for the Fragment
   - type: adapter
-    path: pagedadapter
+    path: mvvmpagedadapter
     name: Employee
     layout: ${camelCaseToUnderscore(name)}_list_item.xml
     layoutfrom: employee_list_item.xml
-    templatename: PagingAdapter
+    templatename: MVVMPagingAdapter
     templatedescription: Crate a Paging Adapter
     parametername: Adapter Name
     parameterhelp: Name for the Adapter

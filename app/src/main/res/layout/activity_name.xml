@@ -5,11 +5,11 @@
 
         <variable
             name="model"
-            type="org.projectkickstart.templates.activity.NameActivityModel" />
+            type="org.projectkickstart.templates.mvvmactivity.NameActivityModel" />
 
         <variable
             name="handler"
-            type="org.projectkickstart.templates.activity.NameActivityHandler" />
+            type="org.projectkickstart.templates.mvvmactivity.NameActivityHandler" />
 
     </data>
 

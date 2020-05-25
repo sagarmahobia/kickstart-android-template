@@ -1,4 +1,4 @@
-package org.projectkickstart.templates.fragment;
+package org.projectkickstart.templates.mvvmfragment;
 
 import android.content.Context;
 import android.os.Bundle;

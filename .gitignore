@@ -13,7 +13,7 @@
 bin/
 gen/
 out/
-templates/
+.templates/
 
 # Gradle files
 .gradle/

@@ -152,8 +152,8 @@ def generateTemplateXML(fullPath, templateName, templateDescription, parameterNa
 
 
 # main
-shutil.rmtree("./templates", ignore_errors=True)
-os.mkdir("./templates")
+shutil.rmtree("./.templates", ignore_errors=True)
+os.mkdir("./.templates")
 
 with open("./buildconfig.yaml", 'r') as stream:
     try:
@@ -161,7 +161,7 @@ with open("./buildconfig.yaml", 'r') as stream:
 
             # print(item['type'])
             folder = item['path']
-            fullPath = "./templates/"+item['templatename']
+            fullPath = "./.templates/"+item['templatename']
 
             makedirs(fullPath)
 
