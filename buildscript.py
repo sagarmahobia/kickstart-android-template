@@ -161,7 +161,7 @@ with open("./buildconfig.yaml", 'r') as stream:
 
             # print(item['type'])
             folder = item['path']
-            fullPath = "./templates/"+folder
+            fullPath = "./templates/"+item['templatename']
 
             makedirs(fullPath)
 
