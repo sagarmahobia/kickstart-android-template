@@ -1,4 +1,4 @@
-package org.projectkickstart.templates.activity;
+package org.projectkickstart.templates.mvvmactivity;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

@@ -1,4 +1,4 @@
-package org.projectkickstart.templates.adapter;
+package org.projectkickstart.templates.mvvmadapter;
 
 import android.view.LayoutInflater;
 import android.view.ViewGroup;

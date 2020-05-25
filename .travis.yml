@@ -7,7 +7,7 @@ install:
 # command to run tests
 script:
   - python buildscript.py
-  - zip -r release.zip templates
+  - zip -r release.zip .templates 
   - ls -all
 deploy:
   provider: releases
