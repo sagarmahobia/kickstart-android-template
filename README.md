@@ -20,11 +20,11 @@ This project is on very early stage.
  
 ### For Mac:
 
-Just copy all files from .templates/ to `$ANDROID_STUDIO_FOLDER$/Contents/plugins/android/lib/templates/other/$CUSTOM_TEMPLATE_FOLDER$`
+Just copy all files from .templates/ to `$ANDROID_STUDIO_FOLDER$/Contents/plugins/android/lib/templates/other/`
 
 ### For Windows:
 
-Just copy all files from .templates/ to `$ANDROID_STUDIO_FOLDER$\plugins\android\lib\templates\other\$CUSTOM_TEMPLATE_FOLDER$`
+Just copy all files from .templates/ to `$ANDROID_STUDIO_FOLDER$\plugins\android\lib\templates\other\`
 
   
 
@@ -34,10 +34,10 @@ Just copy all files from .templates/ to `$ANDROID_STUDIO_FOLDER$\plugins\android
 
 ### For Mac:
 
-Just copy all files from .templates/ to `$ANDROID_STUDIO_FOLDER$/plugins/android/lib/templates/other/$CUSTOM_TEMPLATE_FOLDER$`
+Just copy all files from .templates/ to `$ANDROID_STUDIO_FOLDER$/plugins/android/lib/templates/other/`
 
 ### For Windows:
 
-Just copy all files from .templates/ to `$ANDROID_STUDIO_FOLDER$\plugins\android\lib\templates\other\$CUSTOM_TEMPLATE_FOLDER$`
+Just copy all files from .templates/ to `$ANDROID_STUDIO_FOLDER$\plugins\android\lib\templates\other\`
 
 ![drawer](screenshot.jpg)
