@@ -1,12 +1,18 @@
-Android Studio Template
-
-==================================
+# Android Studio Template
 
 This project is on very early stage.
 
-Here's how this project generate templates.
+
+### How this project generate templates.
 
 ![drawer](generation_process.png)
+
+### how to generate the templates in your own system
+
+
+1. Clone this repo.
+2. run `python buildscript.py`
+3. copy `.templates/` to your android templates directory.
 
 # For Android Studio < 2.2
 
@@ -14,11 +20,11 @@ Here's how this project generate templates.
  
 ### For Mac:
 
-Just copy all files from .templates/ to `$ANDROID_STUDIO_FOLDER$/Contents/plugins/android/lib/templates/other/$CUSTOM_TEMPLATE_FOLDER$`
+Just copy all files from .templates/ to `$ANDROID_STUDIO_FOLDER$/Contents/plugins/android/lib/templates/other/`
 
 ### For Windows:
 
-Just copy all files from .templates/ to `$ANDROID_STUDIO_FOLDER$\plugins\android\lib\templates\other\$CUSTOM_TEMPLATE_FOLDER$`
+Just copy all files from .templates/ to `$ANDROID_STUDIO_FOLDER$\plugins\android\lib\templates\other\`
 
   
 
@@ -28,10 +34,10 @@ Just copy all files from .templates/ to `$ANDROID_STUDIO_FOLDER$\plugins\android
 
 ### For Mac:
 
-Just copy all files from .templates/ to `$ANDROID_STUDIO_FOLDER$/plugins/android/lib/templates/other/$CUSTOM_TEMPLATE_FOLDER$`
+Just copy all files from .templates/ to `$ANDROID_STUDIO_FOLDER$/plugins/android/lib/templates/other/`
 
 ### For Windows:
 
-Just copy all files from .templates/ to `$ANDROID_STUDIO_FOLDER$\plugins\android\lib\templates\other\$CUSTOM_TEMPLATE_FOLDER$`
+Just copy all files from .templates/ to `$ANDROID_STUDIO_FOLDER$\plugins\android\lib\templates\other\`
 
 ![drawer](screenshot.jpg)
