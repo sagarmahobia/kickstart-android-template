@@ -1,12 +1,18 @@
-Android Studio Template
-
-==================================
+# Android Studio Template
 
 This project is on very early stage.
 
-Here's how this project generate templates.
+
+### How this project generate templates.
 
 ![drawer](generation_process.png)
+
+### how to generate the templates in your own system
+
+
+1. Clone this repo.
+2. run python buildscript.py
+3. copy .templates/ to your android templates directory.
 
 # For Android Studio < 2.2
 
