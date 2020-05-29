@@ -1,6 +1,7 @@
 Android Studio Template
 
 ==================================
+
 This project is on very early stage.
 
 Here's how this project generate templates.
