@@ -1,8 +1,11 @@
-
 Android Studio Template
 
 ==================================
 This project is on very early stage.
+
+Here's how this project generate templates.
+
+![drawer](generation_process.png)
 
 # For Android Studio < 2.2
 
