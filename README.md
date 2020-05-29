@@ -11,8 +11,8 @@ This project is on very early stage.
 
 
 1. Clone this repo.
-2. run python buildscript.py
-3. copy .templates/ to your android templates directory.
+2. run `python buildscript.py`
+3. copy `.templates/` to your android templates directory.
 
 # For Android Studio < 2.2
 
