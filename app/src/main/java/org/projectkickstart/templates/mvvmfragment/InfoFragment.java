@@ -10,7 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
-import androidx.lifecycle.ViewModelProviders;
+import androidx.lifecycle.ViewModelProvider;
 
 import org.projectkickstart.templates.R;
 import org.projectkickstart.templates.databinding.FragmentInfoBinding;
@@ -18,6 +18,11 @@ import org.projectkickstart.templates.databinding.FragmentInfoBinding;
 import javax.inject.Inject;
 
 import dagger.android.support.AndroidSupportInjection;
+
+/**
+ * Generated using Android KickStart Template.
+ * visit https://github.com/sagarmahobia/kickstart-android-template to learn more.
+ */
 
 public class InfoFragment extends Fragment implements InfoFragmentHandler {
 
@@ -42,7 +47,7 @@ public class InfoFragment extends Fragment implements InfoFragmentHandler {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        viewModel = ViewModelProviders.of(this, viewModelFactory).get(InfoFragmentViewModel.class);
+        viewModel = new ViewModelProvider(this, viewModelFactory).get(InfoFragmentViewModel.class);
         fragmentModel = viewModel.getFragmentModel();
     }
 

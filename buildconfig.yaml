@@ -36,9 +36,9 @@ templates:
     parametername: Adapter Name
     parameterhelp: Name for the Adapter
 #  - type: app
-#    path: kickstart
+#    path: ./
 #    name: Kickstart
-#    templatename: App Kickstarter File
+#    templatename: KickStartApplication
 #    templatedescription: Create file kickstart application
 #    parametername: Aplication Name
 #    parameterhelp: Name of the app

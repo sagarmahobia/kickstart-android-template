@@ -1,11 +1,10 @@
-package org.projectkickstart.templates.responsemodel;
+package org.projectkickstart.templates;
 
 import androidx.annotation.NonNull;
 
-import static org.projectkickstart.templates.responsemodel.Status.ERROR;
-import static org.projectkickstart.templates.responsemodel.Status.LOADING;
-import static org.projectkickstart.templates.responsemodel.Status.SUCCESS;
-
+import static org.projectkickstart.templates.Status.ERROR;
+import static org.projectkickstart.templates.Status.LOADING;
+import static org.projectkickstart.templates.Status.SUCCESS;
 
 /**
  * Response holder provided to the UI
@@ -24,19 +23,6 @@ public class Response<T> {
         this.error = error;
     }
 
-    public T getData() {
-        return data;
-    }
-
-    @NonNull
-    public Status getStatus() {
-        return status;
-    }
-
-    public Throwable getError() {
-        return error;
-    }
-
     @NonNull
     public static <T> Response loading() {
         return new Response<T>(LOADING, null, null);
@@ -50,6 +36,19 @@ public class Response<T> {
     @NonNull
     public static <T> Response error(@NonNull Throwable error) {
         return new Response<T>(ERROR, null, error);
+    }
+
+    public T getData() {
+        return data;
+    }
+
+    @NonNull
+    public Status getStatus() {
+        return status;
+    }
+
+    public Throwable getError() {
+        return error;
     }
 
 }

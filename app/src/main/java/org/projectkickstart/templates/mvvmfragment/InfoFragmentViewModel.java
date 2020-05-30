@@ -1,25 +1,22 @@
 package org.projectkickstart.templates.mvvmfragment;
 
-import androidx.lifecycle.ViewModel;
+import org.projectkickstart.templates.BaseViewModel;
 
-import io.reactivex.disposables.CompositeDisposable;
+import lombok.Getter;
 
-public class InfoFragmentViewModel extends ViewModel {
+/**
+ * Generated using Android KickStart Template.
+ * visit https://github.com/sagarmahobia/kickstart-android-template to learn more.
+ */
 
 
-    private CompositeDisposable disposable = new CompositeDisposable();
+public class InfoFragmentViewModel extends BaseViewModel {
+
+
+    @Getter
     private InfoFragmentModel fragmentModel = new InfoFragmentModel();
 
     InfoFragmentViewModel() {
     }
 
-    InfoFragmentModel getFragmentModel() {
-        return fragmentModel;
-    }
-
-    @Override
-    protected void onCleared() {
-        super.onCleared();
-        disposable.dispose();
-    }
 }

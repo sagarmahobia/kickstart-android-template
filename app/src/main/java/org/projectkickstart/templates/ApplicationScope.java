@@ -1,12 +1,14 @@
-package org.projectkickstart.templates.kickstart;
+package org.projectkickstart.templates;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
 import javax.inject.Scope;
 
+
 /**
- * Created by SAGAR MAHOBIA
+ * Generated using Android KickStart Template.
+ * visit https://github.com/sagarmahobia/kickstart-android-template to learn more.
  */
 
 @Scope

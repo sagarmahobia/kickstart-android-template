@@ -1,6 +1,4 @@
-package org.projectkickstart.templates.mvvmfragment;
-
-import dagger.Module;
+package org.projectkickstart.templates;
 
 
 /**
@@ -8,6 +6,8 @@ import dagger.Module;
  * visit https://github.com/sagarmahobia/kickstart-android-template to learn more.
  */
 
-@Module
-public class InfoFragmentModule {
+public enum Status {
+    LOADING,
+    SUCCESS,
+    ERROR
 }
