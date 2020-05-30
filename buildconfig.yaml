@@ -1,44 +1,55 @@
+classSrcDir: "./app/src/main/java/org/projectkickstart/templates/"
+
+resSrcDir: "./app/src/main/res/layout/"
+
+outDir: "./.templates/"
+
 templates:
   - type: activity
     path: mvvmactivity
     name: Name
     layout: activity_${camelCaseToUnderscore(name)}.xml
-    layoutfrom: activity_name.xml
-    templatename: MVVMActivity
-    templatedescription: Create an MVVM activity
-    parametername: Activity Name
-    parameterhelp: Name for the Activity
+    layoutFrom: activity_name.xml
+    templateName: MVVMActivity
+    templateDescription: Create an MVVM activity
+    parameterName: Activity Name
+    parameterHelp: Name for the Activity
+ 
   - type: adapter
     path: mvvmadapter
     name: Name
     layout: ${camelCaseToUnderscore(name)}_list_item.xml
-    layoutfrom: name_list_item.xml
-    templatename: MVVMAdapter
-    templatedescription: Create an MVVM adapter
-    parametername: Adapter Name
-    parameterhelp: Name for the Adapter
+    layoutFrom: name_list_item.xml
+    templateName: MVVMAdapter
+    templateDescription: Create an MVVM adapter
+    parameterName: Adapter Name
+    parameterHelp: Name for the Adapter
+ 
   - type: fragment
     path: mvvmfragment
     name: Info
     layout: fragment_${camelCaseToUnderscore(name)}.xml
-    layoutfrom: fragment_info.xml
-    templatename: MVVMFragment
-    templatedescription: Create an MVVM fragment
-    parametername: Fragment Name
-    parameterhelp: Name for the Fragment
+    layoutFrom: fragment_info.xml
+    templateName: MVVMFragment
+    templateDescription: Create an MVVM fragment
+    parameterName: Fragment Name
+    parameterHelp: Name for the Fragment
+
   - type: adapter
     path: mvvmpagedadapter
     name: Employee
     layout: ${camelCaseToUnderscore(name)}_list_item.xml
-    layoutfrom: employee_list_item.xml
-    templatename: MVVMPagingAdapter
-    templatedescription: Crate a Paging Adapter
-    parametername: Adapter Name
-    parameterhelp: Name for the Adapter
+    layoutFrom: employee_list_item.xml
+    templateName: MVVMPagingAdapter
+    templateDescription: Crate a Paging Adapter
+    parameterName: Adapter Name
+    parameterHelp: Name for the Adapter
+    
 #  - type: app
 #    path: ./
 #    name: Kickstart
-#    templatename: KickStartApplication
-#    templatedescription: Create file kickstart application
-#    parametername: Aplication Name
-#    parameterhelp: Name of the app
+#    templateName: KickStartApplication
+#    templateDescription: Create file kickstart application
+#    parameterName: Aplication Name
+#    parameterHelp: Name of the app
+
