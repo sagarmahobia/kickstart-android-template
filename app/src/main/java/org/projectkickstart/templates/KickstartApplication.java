@@ -1,4 +1,4 @@
-package org.projectkickstart.templates.kickstart;
+package org.projectkickstart.templates;
 
 import javax.inject.Inject;
 
@@ -7,9 +7,11 @@ import dagger.android.DispatchingAndroidInjector;
 import dagger.android.HasAndroidInjector;
 
 /**
- * Created by SAGAR MAHOBIA
+ * Generated using Android KickStart Template.
+ * visit https://github.com/sagarmahobia/kickstart-android-template to learn more.
  */
 
+//todo Register the application to the manifest
 public class KickstartApplication extends android.app.Application implements HasAndroidInjector {
     @Inject
     DispatchingAndroidInjector<Object> activityDispatchingAndroidInjector;
@@ -18,7 +20,7 @@ public class KickstartApplication extends android.app.Application implements Has
     public void onCreate() {
         super.onCreate();
 
-        //Uncomment this snipped after configuring
+        //TODO Uncomment this snipped  and hit build
        /*
        DaggerApplicationComponent
                 .builder()
@@ -36,7 +38,7 @@ public class KickstartApplication extends android.app.Application implements Has
     }
 }
 
-//place this snippet to app level build.gradle file.
+//TODO place this snippet to app level build.gradle file.
 /*
 
     implementation 'com.google.dagger:dagger:2.25.2'

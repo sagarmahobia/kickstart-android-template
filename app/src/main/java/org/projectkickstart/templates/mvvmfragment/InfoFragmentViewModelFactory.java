@@ -6,6 +6,11 @@ import androidx.lifecycle.ViewModelProvider;
 
 import javax.inject.Inject;
 
+/**
+ * Generated using Android KickStart Template.
+ * visit https://github.com/sagarmahobia/kickstart-android-template to learn more.
+ */
+
 @InfoFragmentScope
 public class InfoFragmentViewModelFactory implements ViewModelProvider.Factory {
 
@@ -27,9 +32,10 @@ public class InfoFragmentViewModelFactory implements ViewModelProvider.Factory {
 
 /*
 
+//TODO Add this to your Fragment Provider.
+
 @ContributesAndroidInjector(modules = {InfoFragmentModule.class})
 @InfoFragmentScope
 abstract InfoFragment bindInfoFragment();
-
 
 */

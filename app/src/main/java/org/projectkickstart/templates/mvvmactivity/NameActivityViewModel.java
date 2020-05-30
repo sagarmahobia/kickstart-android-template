@@ -1,26 +1,21 @@
 package org.projectkickstart.templates.mvvmactivity;
 
-import androidx.lifecycle.ViewModel;
+import org.projectkickstart.templates.BaseViewModel;
 
-import io.reactivex.disposables.CompositeDisposable;
+import lombok.Getter;
 
-public class NameActivityViewModel extends ViewModel {
+/**
+ * Generated using Android KickStart Template.
+ * visit https://github.com/sagarmahobia/kickstart-android-template to learn more.
+ */
 
-    private final CompositeDisposable disposable = new CompositeDisposable();
+public class NameActivityViewModel extends BaseViewModel {
 
+
+    @Getter
     private NameActivityModel activityModel = new NameActivityModel();
-    ;
 
     public NameActivityViewModel() {
     }
 
-    public NameActivityModel getActivityModel() {
-        return activityModel;
-    }
-
-    @Override
-    protected void onCleared() {
-        super.onCleared();
-        disposable.dispose();
-    }
 }

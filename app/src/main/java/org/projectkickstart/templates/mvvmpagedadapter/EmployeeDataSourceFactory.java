@@ -4,9 +4,14 @@ import androidx.annotation.NonNull;
 import androidx.lifecycle.MutableLiveData;
 import androidx.paging.DataSource;
 
-import org.projectkickstart.templates.mvvmpagedadapter.PagingState;
+import org.projectkickstart.templates.PagingState;
 
 import io.reactivex.disposables.CompositeDisposable;
+
+/**
+ * Generated using Android KickStart Template.
+ * visit https://github.com/sagarmahobia/kickstart-android-template to learn more.
+ */
 
 public class EmployeeDataSourceFactory extends DataSource.Factory<Integer, EmployeeModel> {
 

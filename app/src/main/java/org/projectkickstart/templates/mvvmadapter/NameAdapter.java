@@ -12,14 +12,26 @@ import java.util.List;
 
 import javax.inject.Inject;
 
+import lombok.Setter;
+
+/**
+ * Generated using Android KickStart Template.
+ * visit https://github.com/sagarmahobia/kickstart-android-template to learn more.
+ */
+
 public class NameAdapter extends RecyclerView.Adapter<NameViewHolder> {
 
     private LayoutInflater inflater;
     private List<NameModel> nameModels;
+
+    @Setter
     private OnItemClickListener clickListener;
 
+    @Setter
+    private NameHandler handler;
+
     @Inject
-    NameAdapter() {
+    public NameAdapter() {
     }
 
     public void setNameModels(List<NameModel> nameModels) {
@@ -27,9 +39,6 @@ public class NameAdapter extends RecyclerView.Adapter<NameViewHolder> {
         notifyDataSetChanged();
     }
 
-    public void setClickListener(OnItemClickListener clickListener) {
-        this.clickListener = clickListener;
-    }
 
     @NonNull
     @Override
@@ -48,8 +57,15 @@ public class NameAdapter extends RecyclerView.Adapter<NameViewHolder> {
     public void onBindViewHolder(@NonNull NameViewHolder holder, int position) {
         NameModel nameModel = nameModels.get(position);
 
-        holder.getBinding().setModel(nameModel);
+
         holder.bindTo(nameModel);
+        holder.handleWith(handler);
+
+        holder.itemView.setOnClickListener(v -> {
+            if (clickListener != null) {
+                clickListener.onClick(nameModel);
+            }
+        });
 
     }
 
@@ -61,5 +77,15 @@ public class NameAdapter extends RecyclerView.Adapter<NameViewHolder> {
     public interface OnItemClickListener {
         void onClick(NameModel nameModel);
     }
+
+    /*
+
+    TODO scope
+    @Provides
+    NameAdapter provideNameAdapter(){
+        return new NameAdapter();
+    }
+
+    */
 }
 

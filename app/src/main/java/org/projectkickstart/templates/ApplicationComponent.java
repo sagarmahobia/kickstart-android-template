@@ -1,12 +1,14 @@
-package org.projectkickstart.templates.kickstart;
+package org.projectkickstart.templates;
 
 import dagger.BindsInstance;
 import dagger.Component;
 import dagger.android.AndroidInjectionModule;
 
 /**
- * Created by SAGAR MAHOBIA
+ * Generated using Android KickStart Template.
+ * visit https://github.com/sagarmahobia/kickstart-android-template to learn more.
  */
+
 
 @ApplicationScope
 @Component(modules = {AndroidInjectionModule.class,

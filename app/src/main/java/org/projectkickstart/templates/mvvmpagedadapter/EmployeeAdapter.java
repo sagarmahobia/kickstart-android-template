@@ -9,17 +9,22 @@ import androidx.recyclerview.widget.DiffUtil;
 
 import org.projectkickstart.templates.databinding.EmployeeListItemBinding;
 
+/**
+ * Generated using Android KickStart Template.
+ * visit https://github.com/sagarmahobia/kickstart-android-template to learn more.
+ */
+
 public class EmployeeAdapter extends PagedListAdapter<EmployeeModel, EmployeeViewHolder> {
 
     private static DiffUtil.ItemCallback<EmployeeModel> itemCallback = new DiffUtil.ItemCallback<EmployeeModel>() {
         @Override
         public boolean areItemsTheSame(@NonNull EmployeeModel oldItem, @NonNull EmployeeModel newItem) {
-            return oldItem.getId() == newItem.getId();//TODO
+            return oldItem.getKey().equals(newItem.getKey());//TODO
         }
 
         @Override
         public boolean areContentsTheSame(@NonNull EmployeeModel oldItem, @NonNull EmployeeModel newItem) {
-            return oldItem.getId().equals(newItem.getId());//TODO
+            return oldItem.getKey().equals(newItem.getKey());//TODO
         }
     };
     private LayoutInflater inflater;

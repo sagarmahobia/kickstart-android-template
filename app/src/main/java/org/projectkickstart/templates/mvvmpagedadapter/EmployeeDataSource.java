@@ -4,8 +4,14 @@ import androidx.annotation.NonNull;
 import androidx.lifecycle.MutableLiveData;
 import androidx.paging.ItemKeyedDataSource;
 
+import org.projectkickstart.templates.PagingState;
 
 import io.reactivex.disposables.CompositeDisposable;
+
+/**
+ * Generated using Android KickStart Template.
+ * visit https://github.com/sagarmahobia/kickstart-android-template to learn more.
+ */
 
 public class EmployeeDataSource extends ItemKeyedDataSource<Integer, EmployeeModel> {
 
@@ -41,6 +47,6 @@ public class EmployeeDataSource extends ItemKeyedDataSource<Integer, EmployeeMod
     @NonNull
     @Override
     public Integer getKey(@NonNull EmployeeModel item) {
-        return item.getId();
+        return item.getKey();
     }
 }

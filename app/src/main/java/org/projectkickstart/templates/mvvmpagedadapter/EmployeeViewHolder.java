@@ -4,8 +4,16 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import org.projectkickstart.templates.databinding.EmployeeListItemBinding;
 
+import lombok.Getter;
+
+/**
+ * Generated using Android KickStart Template.
+ * visit https://github.com/sagarmahobia/kickstart-android-template to learn more.
+ */
+
 public class EmployeeViewHolder extends RecyclerView.ViewHolder {
 
+    @Getter
     private EmployeeListItemBinding binding;
 
     EmployeeViewHolder(EmployeeListItemBinding binding) {
@@ -13,9 +21,6 @@ public class EmployeeViewHolder extends RecyclerView.ViewHolder {
         this.binding = binding;
     }
 
-    public EmployeeListItemBinding getBinding() {
-        return binding;
-    }
 
     public void bindTo(EmployeeModel employeeModel) {
         binding.setModel(employeeModel);

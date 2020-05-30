@@ -1,4 +1,9 @@
-package org.projectkickstart.templates.responsemodel;
+package org.projectkickstart.templates;
+
+/**
+ * Generated using Android KickStart Template.
+ * visit https://github.com/sagarmahobia/kickstart-android-template to learn more.
+ */
 
 public class PagingState {
     public static int Loading = 1;
