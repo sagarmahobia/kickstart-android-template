@@ -38,7 +38,7 @@ templates:
 #  - type: app
 #    path: ./
 #    name: Kickstart
-#    templatename: App Kickstarter File
+#    templatename: KickStartApplication
 #    templatedescription: Create file kickstart application
 #    parametername: Aplication Name
 #    parameterhelp: Name of the app
